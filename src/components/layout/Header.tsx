@@ -1,23 +1,26 @@
 // components/Header.tsx
-import Image from "next/image";
+import Image from "next/legacy/image";
 import SearchBar from "../ui/SearchBar";
 import Drawer from "../ui/Drawer/Drawer";
 import Link from "next/link";
 import NavBar from "../ui/NavBar/NavBar";
+import Hamburger from "../ui/Hamburger/Hamburger"
 
 const Header: React.FC = () => {
   return (
-    <header className=" max-w-7xl mx-auto w-full">
-      <div className=" flex items-center py-5">
+    <header className="  ">
+      <div className="  ">
+      <div className=" flex items-center py-5 justify-between">
+    <Hamburger/>
         <Image
           src="/logo.svg"
           alt="Description of Image"
           width={50}
           height={50}
         />
-        <Drawer margin="ml-10" />
-
-        <SearchBar />
+        {/* <Drawer margin="ml-10" /> */}
+{/* 
+        <SearchBar /> */}
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +28,7 @@ const Header: React.FC = () => {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-10 h-10"
+          className="w-10 h-10 "
         >
           <path
             strokeLinecap="round"
@@ -38,6 +41,8 @@ const Header: React.FC = () => {
       <div className="flex items-center">
         <NavBar margin="ml-5" />
       </div>
+      </div>
+      
     </header>
   );
 };

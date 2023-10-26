@@ -2,9 +2,12 @@
 import Image from "next/image";
 
 
+
+
+
 const Footer: React.FC = () => {
   return (
-<footer className=" max-w-7xl mx-auto w-full footer p-10 bg-base-200 text-base-content">
+<footer className="p-8 footer bg-base-200 text-base-content">
   <aside>
   <Image
           src="/logo.svg"

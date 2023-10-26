@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+.containerUser {
+    @apply max-w-7xl mx-auto w-full px-5;
+}
+

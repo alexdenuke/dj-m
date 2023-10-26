@@ -1,0 +1,8 @@
+.logos {
+    @apply max-w-7xl mx-auto w-full flex overflow-x-auto ;
+}
+
+.imgWrap {
+    @apply relative flex-none h-32 mr-10;
+    flex-basis: calc(33.333% - 2.5rem);
+}
