@@ -1,53 +1,64 @@
-import Image from "next/legacy/image";
-import styles from './Logos.module.scss';
+import Image from "next/image";
+import styles from "./Logos.module.scss";
 
 interface LinkProps {
-    margin?: string; // Пропс для задания отступов, например "mt-4" или "mb-4"
-  }
+  margin?: string; // Пропс для задания отступов, например "mt-4" или "mb-4"
+}
 
 const Logos: React.FC<LinkProps> = () => {
   return (
     <>
-      <div className= "">
-        <div className= {styles.logos} >
-            <div className= {styles.imgWrap}>
+      <div className="">
+        <div className="flex overflow-x-auto">
+          <div className={styles.imgWrap}>
             <Image
-            className="w-full"
-            src="/pioneer.png"
-            alt="Description of Image"
-            layout="fill" 
-            objectFit="contain" 
-          />
-            </div>
-            <div className={styles.imgWrap}>
-            <Image
-            className="w-full"
-            src="/pioneer.png"
-            alt="Description of Image"
-            layout="fill" 
-            objectFit="contain" 
-          />
-            </div>
-            <div className={styles.imgWrap}>
-            <Image
-            className="w-full"
-            src="/pioneer.png"
-            alt="Description of Image"
-            layout="fill" 
-            objectFit="contain" 
-          />
-            </div>
+              className=""
+              src="/pioneer.png"
+              alt="Description of Image"
+              width={200}
+              height={0}
+            />
+          </div>
 
-            <div className={styles.imgWrap}>
+          <div className={styles.imgWrap}>
             <Image
-            className="w-full"
-            src="/pioneer.png"
-            alt="Description of Image"
-            layout="fill" 
-            objectFit="contain" 
-          />
-            </div>
+              className=""
+              src="/pioneer.png"
+              alt="Description of Image"
+              width={200}
+              height={0}
+            />
+          </div>
 
+          <div className={styles.imgWrap}>
+            <Image
+              className=""
+              src="/pioneer.png"
+              alt="Description of Image"
+              width={200}
+              height={0}
+            />
+          </div>
+
+          <div className={styles.imgWrap}>
+            <Image
+              className=""
+              src="/pioneer.png"
+              alt="Description of Image"
+              width={200}
+              height={0}
+            />
+          </div>
+
+          <div className={styles.imgWrap}>
+            <Image
+              className=""
+              src="/pioneer.png"
+              alt="Description of Image"
+              width={200}
+              height={0}
+            />
+          </div>
         </div>
       </div>
     </>
