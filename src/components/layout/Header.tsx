@@ -1,5 +1,5 @@
 // components/Header.tsx
-import Image from "next/legacy/image";
+import Image from "next/image";
 import SearchBar from "../ui/SearchBar";
 import Drawer from "../ui/Drawer/Drawer";
 import Link from "next/link";
@@ -8,19 +8,22 @@ import Hamburger from "../ui/Hamburger/Hamburger"
 
 const Header: React.FC = () => {
   return (
-    <header className="  ">
-      <div className="  ">
-      <div className=" flex items-center py-5 justify-between">
+    <header className="">
+      <div className="containerUser  ">
+
+      
+      <div className=" flex items-center justify-between py-5">
     <Hamburger/>
         <Image
+        className=""
           src="/logo.svg"
-          alt="Description of Image"
           width={50}
-          height={50}
+          height={44}
+          alt="Description of Image"
         />
-        {/* <Drawer margin="ml-10" /> */}
-{/* 
-        <SearchBar /> */}
+        <Drawer margin="ml-10" />
+
+        <SearchBar />
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +45,6 @@ const Header: React.FC = () => {
         <NavBar margin="ml-5" />
       </div>
       </div>
-      
     </header>
   );
 };

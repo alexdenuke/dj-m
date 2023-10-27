@@ -6,12 +6,14 @@ import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+import image1 from '/public/slide1.png'
 
 export default () => {
     return (
         <Swiper
+        className=''
             modules={[Pagination, Autoplay]}
-            className='max-w-7xl mx-auto w-full'
+            
             style={{ height: '300px' }}
             spaceBetween={50}
             slidesPerView={1}
@@ -24,44 +26,45 @@ export default () => {
                 disableOnInteraction: false,
             }}
         >
-            <SwiperSlide className=''>
+            <SwiperSlide className='relative'>
                 <Image
                     className=''
-                    src='/slide1.png'
+                    src={image1}
                     alt='Description of Image'
-                    layout='fill' // Адаптивное изменение размера
-                    objectFit='cover' // Изображение заполняет слайдер
-                    priority
+                    fill={true}
+                    style={{objectFit: "cover"}}
+                    priority={true}
+                    placeholder="blur"
                 />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='relative'>
                 <Image
                     className=''
                     src='/slide2.png'
                     alt='Description of Image'
-                    layout='fill' // Адаптивное изменение размера
-                    objectFit='cover' // Изображение заполняет слайдер
-                    priority
+                    fill={true}
+                    style={{objectFit: "cover"}}
+                    priority={true}
                 />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='relative'>
                 <Image
                     className=''
                     src='/slide3.png'
                     alt='Description of Image'
-                    layout='fill' // Адаптивное изменение размера
-                    objectFit='cover' // Изображение заполняет слайдер
-                    priority
+                    fill={true}
+                    style={{objectFit: "cover"}}
+                    priority={true}
                 />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className='relative'>
                 <Image
                     className='max-w-7xl mx-auto w-full'
                     src='/slide4.png'
                     alt='Description of Image'
-                    layout='fill' // Адаптивное изменение размера
-                    objectFit='cover' // Изображение заполняет слайдер
-                    priority
+                    fill={true}
+                    style={{objectFit: "cover"}}
+                    priority={true}
                 />
             </SwiperSlide>
         </Swiper>

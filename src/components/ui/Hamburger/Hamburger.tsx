@@ -1,6 +1,6 @@
 const Hamburger: React.FC = () => {
   return (
-    <label className="btn btn-circle swap swap-rotate">
+    <label className="btn btn-circle swap swap-rotate md:hidden">
       {/* this hidden checkbox controls the state */}
       <input type="checkbox" />
 

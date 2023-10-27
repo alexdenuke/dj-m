@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar: React.FC = () => {
   return (
-    <div className="flex items-center border-b w-full rounded-md mx-20">
+    <div className="flex items-center border-b w-full rounded-md mx-20 hidden md:flex">
       <input
         type="text"
         placeholder="Search..."
