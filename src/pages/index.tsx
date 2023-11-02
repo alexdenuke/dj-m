@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Hero from '../components/ui/Hero/Hero'
 import Swiper from '../components/ui/Swiper/Swiper'
+import Swiper2 from '../components/ui/Swiper/Swiper2/Swiper2'
 import Logos from '@/components/ui/Logos/Logos'
 import MainCategories from '../components/ui/MainCategories/Maincategories'
 
@@ -14,6 +15,10 @@ export default function Home() {
     <Swiper/>
     <Logos/>
     <MainCategories/>
+    <h2
+    className=' text-3xl font-bold mb-5'
+    >Популярные товары</h2>
+    <Swiper2/>
     </>
   )
 }

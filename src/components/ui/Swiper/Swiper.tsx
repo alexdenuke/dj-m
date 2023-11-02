@@ -1,32 +1,77 @@
 // Import Swiper React components
-import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import image1 from '/public/slide1.png'
 
 export default () => {
-    return (
-        <Swiper
-        className=''
-            modules={[Pagination, Autoplay]}
-            
-            style={{ height: '300px' }}
-            spaceBetween={50}
-            slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-            pagination={{ clickable: true }}
-            loop={true}
-            autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-            }}
-        >
-            <SwiperSlide className='relative'>
+  return (
+    <Swiper
+    className=' h-80'
+
+      spaceBetween={50}
+      slidesPerView={1}
+      
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>
+      <Image
+      src="/slide1.png"
+      alt="Picture of the author"
+      fill={true}
+      style={{objectFit: "cover"}}
+    />
+      </SwiperSlide>
+      <SwiperSlide>
+      <Image
+      src="/slide2.png"
+      alt="Picture of the author"
+      fill={true}
+      style={{objectFit: "cover"}}
+    />
+      </SwiperSlide>
+      <SwiperSlide>
+      <Image
+      src="/slide3.png"
+      alt="Picture of the author"
+      fill={true}
+      style={{objectFit: "cover"}}
+    />
+      </SwiperSlide>
+      <SwiperSlide>
+      <Image
+      src="/slide4.png"
+      alt="Picture of the author"
+      fill={true}
+      style={{objectFit: "cover"}}
+    />
+      </SwiperSlide>
+    </Swiper>
+  );
+};
+
+
+
+
+
+
+// className=''
+// modules={[Pagination, Autoplay]}
+
+// style={{ height: '300px' }}
+// spaceBetween={50}
+// slidesPerView={1}
+// onSlideChange={() => console.log('slide change')}
+// onSwiper={(swiper) => console.log(swiper)}
+// pagination={{ clickable: true }}
+// loop={true}
+// autoplay={{
+//     delay: 5000,
+//     disableOnInteraction: false,
+// }}
+
+            {/* <SwiperSlide className='relative'>
                 <Image
                     className=''
                     src={image1}
@@ -66,7 +111,4 @@ export default () => {
                     style={{objectFit: "cover"}}
                     priority={true}
                 />
-            </SwiperSlide>
-        </Swiper>
-    );
-};
+            </SwiperSlide> */}

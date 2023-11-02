@@ -14,13 +14,16 @@ const Header: React.FC = () => {
       
       <div className=" flex items-center justify-between py-5">
     <Hamburger/>
-        <Image
+    <Link className="" href="/" id="link">
+    <Image
         className=""
           src="/logo.svg"
           width={50}
           height={44}
           alt="Description of Image"
         />
+      </Link>
+
         <Drawer margin="ml-10" />
 
         <SearchBar />
