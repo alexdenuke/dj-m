@@ -16,7 +16,7 @@ const Logos: React.FC<LinkProps> = () => {
               src="/pioneer.png"
               alt="Description of Image"
               width={200}
-              height={0}
+              height={30}
             />
           </div>
 
@@ -26,7 +26,7 @@ const Logos: React.FC<LinkProps> = () => {
               src="/pioneer.png"
               alt="Description of Image"
               width={200}
-              height={0}
+              height={30}
             />
           </div>
 
@@ -36,7 +36,7 @@ const Logos: React.FC<LinkProps> = () => {
               src="/pioneer.png"
               alt="Description of Image"
               width={200}
-              height={0}
+              height={30}
             />
           </div>
 
@@ -46,7 +46,7 @@ const Logos: React.FC<LinkProps> = () => {
               src="/pioneer.png"
               alt="Description of Image"
               width={200}
-              height={0}
+              height={30}
             />
           </div>
 
@@ -56,7 +56,7 @@ const Logos: React.FC<LinkProps> = () => {
               src="/pioneer.png"
               alt="Description of Image"
               width={200}
-              height={0}
+              height={30}
             />
           </div>
         </div>

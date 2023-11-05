@@ -14,12 +14,12 @@ const Header: React.FC = () => {
       
       <div className=" flex items-center justify-between py-5">
     <Hamburger/>
-    <Link className="" href="/" id="link">
+    <Link className=" block" href="/" id="link">
     <Image
         className=""
           src="/logo.svg"
-          width={50}
-          height={44}
+          width={70}
+          height={0}
           alt="Description of Image"
         />
       </Link>
