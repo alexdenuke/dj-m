@@ -7,4 +7,8 @@
     @apply max-w-7xl mx-auto w-full px-5;
 }
 
+.title-normal {
+    @apply text-2xl md:text-3xl font-bold mb-4 md:mb-6
+}
+
 

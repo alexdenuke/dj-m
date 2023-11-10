@@ -9,7 +9,7 @@ export default function ProductCard() {
   return (
     <>
     <Breadcrumbs/>
-    <h1 className=' text-3xl my-4'>Название товара</h1>
+    <h1 className=' title-normal'>Название товара</h1>
     <div className='grid   grid-cols-1 md:grid-cols-3'>
     <div className='justify-self-center md:justify-self-start'>
     <Image

@@ -4,7 +4,7 @@ import Image from "next/image";
 const ProductCatalog = () => {
   return (
     <>
-      <h1 className=" text-3xl mb-6">Каталог продуктов</h1>
+      <h1 className="title-normal">Каталог продуктов</h1>
       <div className="flex">
         <div className="grid gap-x-5 grid-cols-2 sm:grid-cols-3 w-full md:w-2/3">
 

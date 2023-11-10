@@ -13,11 +13,11 @@ export default function Home() {
   return (
     <>
     <Swiper/>
-    <h2 className='text-3xl font-bold mt-10 mb-6'>Брэнды</h2>
+    <h2 className='title-normal mt-10 '>Брэнды</h2>
     <SwiperLogo/>
     <MainCategories/>
     <h2
-    className=' text-3xl font-bold mb-6 mt-10'
+    className=' title-normal mt-10'
     >Популярные товары</h2>
     <Swiper2/>
     </>
