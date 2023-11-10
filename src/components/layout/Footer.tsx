@@ -1,9 +1,11 @@
 // components/Footer.tsx
 import Image from "next/image";
+import BottomNavigation from "../ui/BottomNavigation/BottomNavigation";
 
 const Footer: React.FC = () => {
   return (
     <div>
+      <BottomNavigation/>
       <div className="containerUser">
       <footer className="p-8 footer bg-base-200 text-base-content ">
       <aside>
@@ -39,6 +41,7 @@ const Footer: React.FC = () => {
         <a className="link link-hover">Privacy policy</a>
         <a className="link link-hover">Cookie policy</a>
       </nav>
+      
     </footer>
       </div>
       

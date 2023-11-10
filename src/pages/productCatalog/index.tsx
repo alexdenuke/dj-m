@@ -8,8 +8,8 @@ const ProductCatalog = () => {
       <div className="flex">
         <div className="grid gap-x-5 grid-cols-2 sm:grid-cols-3 w-full md:w-2/3">
 
-          <div className="flex flex-col mb-5 ">
-            <div className="  flex justify-center w-full ">
+          <div className="flex flex-col mb-5  p-4">
+            <div className="flex justify-center w-full ">
               <Image
                 className=""
                 src="/catalog-img.png"
@@ -19,10 +19,29 @@ const ProductCatalog = () => {
               />
             </div>
             <span className=" text-center my-3">Описание</span>
+            <div className="flex justify-between">
+              <div>100 р</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-col mb-5 ">
-            <div className="  flex justify-center w-full ">
+          <div className="flex flex-col mb-5  p-4">
+            <div className="flex justify-center w-full ">
               <Image
                 className=""
                 src="/catalog-img.png"
@@ -32,10 +51,29 @@ const ProductCatalog = () => {
               />
             </div>
             <span className=" text-center my-3">Описание</span>
+            <div className="flex justify-between">
+              <div>100 р</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-col mb-5 ">
-            <div className="  flex justify-center w-full ">
+          <div className="flex flex-col mb-5  p-4">
+            <div className="flex justify-center w-full ">
               <Image
                 className=""
                 src="/catalog-img.png"
@@ -45,10 +83,29 @@ const ProductCatalog = () => {
               />
             </div>
             <span className=" text-center my-3">Описание</span>
+            <div className="flex justify-between">
+              <div>100 р</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
 
-          <div className="flex flex-col mb-5 ">
-            <div className="  flex justify-center w-full ">
+          <div className="flex flex-col mb-5  p-4">
+            <div className="flex justify-center w-full ">
               <Image
                 className=""
                 src="/catalog-img.png"
@@ -58,12 +115,29 @@ const ProductCatalog = () => {
               />
             </div>
             <span className=" text-center my-3">Описание</span>
+            <div className="flex justify-between">
+              <div>100 р</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+              </div>
+            </div>
           </div>
-
-         
 
         </div>
-        <aside className=" hidden md:block text-2xl text-center h-auto w-full   bg-slate-200 flex-grow-0  w-1/3">
+        <aside className=" hidden md:block text-2xl text-center h-auto  bg-slate-200 flex-grow-0  w-1/3">
           Фильтры
         </aside>
       </div>

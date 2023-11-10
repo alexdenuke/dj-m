@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
-import { SwiperOptions } from 'swiper/types';
+import { SwiperOptions } from "swiper/types";
 
 // Import Swiper styles
 import "swiper/css";
@@ -10,7 +10,6 @@ import "swiper/css";
 export default () => {
   return (
     <Swiper
-    
       className="h-80 mb-14"
       breakpoints={{
         // when window width is >= 640px
@@ -46,126 +45,17 @@ export default () => {
         </Link>
         <div className="flex justify-between">
           <div
+            className="font-bold"          
           >Цена 100 р</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
-            />
-          </svg>
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="flex flex-col p-5">
-        <div className="flex justify-center">
+          <Link className="shrink-0" href="/" id="link">
           <Image
-            className="mb-5"
-            src="/item1.png"
-            alt="Picture of the author"
-            width={200}
-            height={200}
-            // fill={true}
-            // style={{objectFit: "contain"}}
-          />
-        </div>
-
-        <Link className="text-center mb-5 block" href="/" id="link">
-          Описание
-        </Link>
-        <div className="flex justify-between">
-          <div>Цена 100 р</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
+              className=""
+              src="/plus-cart.svg"
+              width={28}
+              height={25} // Округленное значение высоты
+              alt="Description of Image"
             />
-          </svg>
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="flex flex-col p-5">
-        <div className="flex justify-center">
-          <Image
-            className="mb-5"
-            src="/item1.png"
-            alt="Picture of the author"
-            width={200}
-            height={200}
-            // fill={true}
-            // style={{objectFit: "contain"}}
-          />
-        </div>
-
-        <Link className="text-center mb-5 block" href="/" id="link">
-          Описание
-        </Link>
-        <div className="flex justify-between">
-          <div>Цена 100 р</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
-            />
-          </svg>
-        </div>
-      </SwiperSlide>
-
-      <SwiperSlide className="flex flex-col p-5">
-        <div className="flex justify-center">
-          <Image
-            className="mb-5"
-            src="/item1.png"
-            alt="Picture of the author"
-            width={200}
-            height={200}
-            // fill={true}
-            // style={{objectFit: "contain"}}
-          />
-        </div>
-
-        <Link className="text-center mb-5 block" href="/" id="link">
-          Описание
-        </Link>
-        <div className="flex justify-between">
-          <div>Цена 100 р</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
-            />
-          </svg>
+          </Link>
         </div>
       </SwiperSlide>
 
@@ -186,23 +76,117 @@ export default () => {
           Описание
         </Link>
         <div className="flex justify-between">
-          <div>Цена 100 р</div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v15m7.5-7.5h-15"
+          <div
+            className="font-bold"          
+          >Цена 100 р</div>
+          <Link className="shrink-0" href="/" id="link">
+          <Image
+              className=""
+              src="/plus-cart.svg"
+              width={28}
+              height={25} // Округленное значение высоты
+              alt="Description of Image"
             />
-          </svg>
+          </Link>
         </div>
       </SwiperSlide>
+
+      <SwiperSlide className="flex flex-col p-5">
+        <div className="flex justify-center">
+          <Image
+            className="mb-5"
+            src="/item1.png"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            // fill={true}
+            // style={{objectFit: "contain"}}
+          />
+        </div>
+
+        <Link className="text-center mb-5 block" href="/productCard" id="link">
+          Описание
+        </Link>
+        <div className="flex justify-between">
+          <div
+            className="font-bold"          
+          >Цена 100 р</div>
+          <Link className="shrink-0" href="/" id="link">
+          <Image
+              className=""
+              src="/plus-cart.svg"
+              width={28}
+              height={25} // Округленное значение высоты
+              alt="Description of Image"
+            />
+          </Link>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide className="flex flex-col p-5">
+        <div className="flex justify-center">
+          <Image
+            className="mb-5"
+            src="/item1.png"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            // fill={true}
+            // style={{objectFit: "contain"}}
+          />
+        </div>
+
+        <Link className="text-center mb-5 block" href="/productCard" id="link">
+          Описание
+        </Link>
+        <div className="flex justify-between">
+          <div
+            className="font-bold"          
+          >Цена 100 р</div>
+          <Link className="shrink-0" href="/" id="link">
+          <Image
+              className=""
+              src="/plus-cart.svg"
+              width={28}
+              height={25} // Округленное значение высоты
+              alt="Description of Image"
+            />
+          </Link>
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide className="flex flex-col p-5">
+        <div className="flex justify-center">
+          <Image
+            className="mb-5"
+            src="/item1.png"
+            alt="Picture of the author"
+            width={200}
+            height={200}
+            // fill={true}
+            // style={{objectFit: "contain"}}
+          />
+        </div>
+
+        <Link className="text-center mb-5 block" href="/productCard" id="link">
+          Описание
+        </Link>
+        <div className="flex justify-between">
+          <div
+            className="font-bold"          
+          >Цена 100 р</div>
+          <Link className="shrink-0" href="/" id="link">
+          <Image
+              className=""
+              src="/plus-cart.svg"
+              width={28}
+              height={25} // Округленное значение высоты
+              alt="Description of Image"
+            />
+          </Link>
+        </div>
+      </SwiperSlide>
+
     </Swiper>
   );
 };

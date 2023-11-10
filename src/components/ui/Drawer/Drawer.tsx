@@ -10,7 +10,7 @@ const Drawer: React.FC<DrawerProps> = ({ margin = "" }) => {
         <div className={`drawer w-auto tracking-widest hidden md:block ${margin}`}>
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content ">
-                <label htmlFor="my-drawer" className="btn  btn-primary drawer-button bg-neutral-800 border-0 text-white">Каталог</label>
+                <label htmlFor="my-drawer" className="btn text-base btn-primary drawer-button bg-neutral-800 border-0 text-white">Каталог</label>
             </div>
             <div className="drawer-side z-10">
                 <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay "></label>

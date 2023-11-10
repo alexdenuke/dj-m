@@ -4,9 +4,10 @@ import Link from "next/link";
 const MainCategories = () => {
   return (
     <>
-      <h2 className="text-3xl font-bold ">Популярные категории</h2>
+      <h2 className="text-3xl font-bold mb-6 mt-10">Популярные категории</h2>
       <div className="grid md:grid-cols-5 grid-cols-2">
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -15,14 +16,15 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center mb-5 block"
+            className="text-center block mt-3"
             href="/productCatalog"
             id="link"
           >
-            Ссылка
+            Название
           </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -30,9 +32,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -40,9 +49,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -50,9 +66,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -60,9 +83,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -70,9 +100,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -80,9 +117,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -90,9 +134,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -100,9 +151,16 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
-        <div className="m-2 border p-4 shadow-md flex flex-col items-center justify-center">
+
+        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -110,8 +168,15 @@ const MainCategories = () => {
             height={44}
             alt="Description of Image"
           />
-          <span>Кнобы</span>
+          <Link
+            className="text-center block mt-3"
+            href="/productCatalog"
+            id="link"
+          >
+            Название
+          </Link>
         </div>
+
       </div>
     </>
   );
