@@ -15,6 +15,7 @@ export default () => {
     >
       <SwiperSlide>
         <Image
+        
           src="/slide1.png"
           alt="Picture of the author"
           fill={true}

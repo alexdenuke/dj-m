@@ -9,7 +9,7 @@ import "swiper/css";
 export default () => {
   return (
     <Swiper
-    className=" border-y-2 h-auto"
+    className=" border-y-2  bg-white bg-opacity-70"
       spaceBetween={30}
       slidesPerView={2}
       breakpoints={{
@@ -22,7 +22,7 @@ export default () => {
       }}
     >
       <SwiperSlide
-      className="py-10">
+      className="py-5">
         <Link className="flex justify-center" href="/" id="link">
         <Image
               className=""
@@ -35,7 +35,7 @@ export default () => {
       </SwiperSlide>
 
       <SwiperSlide
-      className="py-10">
+      className="py-5">
         <Link className="flex justify-center" href="/" id="link">
         <Image
               className=""
@@ -48,7 +48,7 @@ export default () => {
       </SwiperSlide>
 
       <SwiperSlide
-      className="py-10">
+      className="py-5">
         <Link className="flex justify-center" href="/" id="link">
         <Image
               className=""
@@ -61,7 +61,7 @@ export default () => {
       </SwiperSlide>
 
       <SwiperSlide
-      className="py-10">
+      className="py-5">
         <Link className="flex justify-center" href="/" id="link">
         <Image
               className=""
@@ -74,7 +74,7 @@ export default () => {
       </SwiperSlide>
 
       <SwiperSlide
-      className="py-10">
+      className="py-5">
         <Link className="flex justify-center" href="/" id="link">
         <Image
               className=""

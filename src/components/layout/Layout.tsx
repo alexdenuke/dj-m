@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       className="md:mt-52"
       ></div>
       <Header />
-      <main className="flex-grow containerUser ">{children}</main>
+      <main className="flex-grow ">{children}</main>
       <Footer />
     </div>
   );
