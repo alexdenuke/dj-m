@@ -7,10 +7,10 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function ProductCard() {
   return (
-    <>
-    <Breadcrumbs/>
+    <div className="containerUser">
+      <Breadcrumbs/>
     <h1 className=' title-normal'>Название товара</h1>
-    <div className='grid   grid-cols-1 md:grid-cols-3'>
+    <div className='grid grid-cols-1 md:grid-cols-3'>
     <div className='justify-self-center md:justify-self-start'>
     <Image
       src="/productCard.png"
@@ -29,7 +29,6 @@ export default function ProductCard() {
     </button>
     </div>
     </div>
-
-    </>
+    </div>
   )
 }
