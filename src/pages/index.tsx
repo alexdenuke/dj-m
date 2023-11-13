@@ -12,16 +12,16 @@ export default function Home() {
   return (
     <>
       {/* <Swiper/> */}
-      <div className="bg-[url('/main-back-ground.jpg')] bg-no-repeat bg-cover h-auto py-9 ">
+      <div className="bg-[url('/main-back-ground.jpg')] bg-no-repeat bg-cover h-auto py-14 ">
         <div className="containerUser h-full">
           <div className="flex flex-col items-center justify-center h-full">
-            <div className="text-white font-bold text-3xl text-center ">
+            <div className="text-white title-h1 text-center ">
               Магазин запчастей для диджейского оборудования
             </div>
-            <div className="text-white text-2xl mt-5 text-center">
+            <div className="text-white title-normal text-center">
           Лучшие и отборные запчасти
             </div>
-              <form className="flex justify-center mt-5 text-center pb-5">
+              <form className="flex justify-center mt-8 text-center pb-14">
                 <input
                   type="text"
                   className="form-input rounded-l border-2 border-r-0 px-4 py-2"
@@ -30,7 +30,7 @@ export default function Home() {
                 />
                 <button
                   type="submit"
-                  className="rounded-r bg-blue-500 text-white px-4 py-2 border-2 border-blue-500 hover:bg-blue-600"
+                  className="rounded-r bg-gray-500 text-white px-4 py-2 border-2 border-gray-500 hover:bg-gray-600"
                 >
                   Поиск
                 </button>

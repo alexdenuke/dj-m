@@ -8,7 +8,10 @@
 }
 
 .title-normal {
-    @apply text-2xl md:text-3xl font-bold mb-4 md:mb-6
+    @apply text-xl md:text-2xl font-bold mb-4 md:mb-6
 }
 
+.title-h1 {
+   @apply text-2xl md:text-3xl font-bold mb-4 md:mb-6
+}
 

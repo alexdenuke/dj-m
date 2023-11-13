@@ -9,7 +9,7 @@ import "swiper/css";
 export default () => {
   return (
     <Swiper
-    className=" border-y-2  bg-white bg-opacity-70"
+      className=" bg-white bg-opacity-70 h-14"
       spaceBetween={30}
       slidesPerView={2}
       breakpoints={{
@@ -21,72 +21,67 @@ export default () => {
         // when window width is >= 1024px
       }}
     >
-      <SwiperSlide
-      className="py-5">
-        <Link className="flex justify-center" href="/" id="link">
-        <Image
-              className=""
-              src="/pioneer.png"
-              width={200}
-              height={42} // Округленное значение высоты
-              alt="Description of Image"
-            />
+      <SwiperSlide className="">
+        <Link className="" href="/" id="link">
+          <Image
+            className=""
+            src="/pioneer.png"
+            fill={true}
+            style={{ objectFit: "contain" }}
+            // width={200}
+            // height={43} // Округленное значение высоты
+            alt="Description of Image"
+          />
         </Link>
       </SwiperSlide>
 
-      <SwiperSlide
-      className="py-5">
-        <Link className="flex justify-center" href="/" id="link">
-        <Image
-              className=""
-              src="/pioneer.png"
-              width={200}
-              height={42} // Округленное значение высоты
-              alt="Description of Image"
-            />
+      <SwiperSlide className="">
+        <Link className="" href="/" id="link">
+          <Image
+            className=""
+            src="/vestax.png"
+            fill={true}
+            style={{ objectFit: "contain" }}
+            alt="Description of Image"
+          />
         </Link>
       </SwiperSlide>
 
-      <SwiperSlide
-      className="py-5">
-        <Link className="flex justify-center" href="/" id="link">
-        <Image
-              className=""
-              src="/pioneer.png"
-              width={200}
-              height={42} // Округленное значение высоты
-              alt="Description of Image"
-            />
+      <SwiperSlide className="">
+        <Link className="" href="/" id="link">
+          <Image
+            className=""
+            src="/yamaha.jpg"
+            fill={true}
+            style={{ objectFit: "contain" }}
+            alt="Description of Image"
+          />
         </Link>
       </SwiperSlide>
 
-      <SwiperSlide
-      className="py-5">
-        <Link className="flex justify-center" href="/" id="link">
-        <Image
-              className=""
-              src="/pioneer.png"
-              width={200}
-              height={42} // Округленное значение высоты
-              alt="Description of Image"
-            />
+      <SwiperSlide className="">
+        <Link className="" href="/" id="link">
+          <Image
+            className=""
+            src="/pioneer.png"
+            fill={true}
+            style={{ objectFit: "contain" }}
+            alt="Description of Image"
+          />
         </Link>
       </SwiperSlide>
 
-      <SwiperSlide
-      className="py-5">
-        <Link className="flex justify-center" href="/" id="link">
-        <Image
-              className=""
-              src="/pioneer.png"
-              width={200}
-              height={42} // Округленное значение высоты
-              alt="Description of Image"
-            />
+      <SwiperSlide className="">
+        <Link className="" href="/" id="link">
+          <Image
+            className=""
+            src="/pioneer.png"
+            fill={true}
+            style={{ objectFit: "contain" }}
+            alt="Description of Image"
+          />
         </Link>
       </SwiperSlide>
-      
-
     </Swiper>
   );
 };
