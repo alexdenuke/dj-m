@@ -26,7 +26,7 @@ const Header: React.FC = () => {
   return (
 <header className="md:fixed bg-white shadow-md top-0 z-50 w-full mb-20">
 <div className="containerUser">
-  <div className="flex items-center justify-between py-6 ">
+  <div className="flex items-center  justify-between py-6 ">
   <Hamburger />
           <Link className="shrink-0" href="/" id="link">
             <Image
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
           </svg>
   </div>
   {showNavBar && (
-    <div className="md:flex items-center hidden">
+    <div className="md:flex items-center ">
       <NavBar margin="ml-5" />
     </div>
   )}

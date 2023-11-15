@@ -9,7 +9,7 @@ import "swiper/css";
 export default () => {
   return (
     <Swiper
-      className=" bg-white bg-opacity-70 h-14"
+      className="  h-14 my-10"
       spaceBetween={30}
       slidesPerView={2}
       breakpoints={{

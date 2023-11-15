@@ -11,9 +11,16 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
+    
       {/* <Swiper/> */}
+      <div className="containerUser">
+      
+
+      </div>
       <div className="bg-[url('/main-back-ground.jpg')] bg-no-repeat bg-cover h-auto py-14 ">
+      
         <div className="containerUser h-full">
+        
           <div className="flex flex-col items-center justify-center h-full">
             <div className="text-white title-h1 text-center ">
               Магазин запчастей для диджейского оборудования
@@ -25,24 +32,28 @@ export default function Home() {
                 <input
                   type="text"
                   className="form-input rounded-l border-2 border-r-0 px-4 py-2"
-                  placeholder="Поиск..."
+                  placeholder="Поиск по всему сайту"
                   // Событие onChange для обработки ввода
                 />
                 <button
                   type="submit"
-                  className="rounded-r bg-gray-500 text-white px-4 py-2 border-2 border-gray-500 hover:bg-gray-600"
+                  className="rounded-r bg-gray-700 text-white px-4 py-2 border-2 border-gray-700 hover:border-gray-900 hover:bg-gray-900"
                 >
                   Поиск
                 </button>
               </form>
           </div>
-          <SwiperLogo />
         </div>
         
       </div>
-
+      <div className="bg-gray-200 py-5 select-none">
+        <div className="containerUser ">
+        <SwiperLogo />
+        </div>
+      </div>
       <div className="containerUser">
-        <h2 className="title-normal mt-10 ">Брэнды</h2>
+      
+        <h2 className="title-normal mt-10 "></h2>
         
         
         <MainCategories />
