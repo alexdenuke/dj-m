@@ -1,11 +1,10 @@
 // components/Header.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import SearchBar from "../ui/SearchBar/SearchBar";
 import Drawer from "../ui/Drawer/Drawer";
 import Link from "next/link";
 import NavBar from "../ui/NavBar/NavBar";
-import Hamburger from "../ui/Hamburger/Hamburger";
 
 const Header: React.FC = () => {
   const [showNavBar, setShowNavBar] = useState(true);
@@ -18,16 +17,15 @@ const Header: React.FC = () => {
     };
 
     // Подписываемся на событие scroll
-    window.addEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
 
     // Отписываемся от события при размонтировании компонента
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-<header className="md:fixed bg-white shadow-md top-0 z-50 w-full md:mb-20">
-<div className="containerUser">
-  <div className="flex items-center  justify-between py-6 ">
-  <Hamburger />
+    <header className="md:fixed bg-white shadow-md top-0 z-50 w-full md:mb-20">
+      <div className="containerUser">
+        <div className="flex items-center  justify-between py-6 ">
           <Link className="shrink-0" href="/" id="link">
             <Image
               className=""
@@ -38,7 +36,7 @@ const Header: React.FC = () => {
             />
           </Link>
 
-          <Drawer margin="ml-10" />
+          <Drawer margin="md:ml-10" />
 
           <SearchBar />
           <svg
@@ -56,8 +54,6 @@ const Header: React.FC = () => {
             />
           </svg>
 
-
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -72,14 +68,14 @@ const Header: React.FC = () => {
               d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
             />
           </svg>
-  </div>
-  {showNavBar && (
-    <div className="md:flex items-center ">
-      <NavBar margin="ml-5" />
-    </div>
-  )}
-</div>
-</header>
+        </div>
+        {showNavBar && (
+          <div className="md:flex items-center ">
+            <NavBar margin="ml-5" />
+          </div>
+        )}
+      </div>
+    </header>
   );
 };
 

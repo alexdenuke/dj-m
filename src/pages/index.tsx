@@ -28,10 +28,10 @@ export default function Home() {
             <div className="text-white title-normal text-center">
           Лучшие и отборные запчасти
             </div>
-              <form className="flex justify-center mt-8 text-center pb-14">
+              <form className="flex justify-center mt-8 text-center pb-14 w-full">
                 <input
                   type="text"
-                  className="form-input rounded-l border-2 border-r-0 px-4 py-2"
+                  className="form-input rounded-l border-2 border-r-0 px-4 py-2 max-w-md min-w-0 grow"
                   placeholder="Поиск по всему сайту"
                   // Событие onChange для обработки ввода
                 />
