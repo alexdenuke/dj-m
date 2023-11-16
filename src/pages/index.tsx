@@ -14,7 +14,7 @@ export default function Home() {
     
       {/* <Swiper/> */}
       <div className="containerUser">
-      
+      <SwiperLogo />
 
       </div>
       <div className="bg-[url('/main-back-ground.jpg')] bg-no-repeat bg-cover h-auto py-14 ">
@@ -46,11 +46,11 @@ export default function Home() {
         </div>
         
       </div>
-      <div className="bg-gray-200 py-5 select-none">
+      {/* <div className="bg-gray-200 py-5 select-none">
         <div className="containerUser ">
-        <SwiperLogo />
+
         </div>
-      </div>
+      </div> */}
       <div className="containerUser">
       
         <h2 className="title-normal mt-10 "></h2>

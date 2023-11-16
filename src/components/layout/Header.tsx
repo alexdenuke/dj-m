@@ -24,7 +24,7 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
   return (
-<header className="md:fixed bg-white shadow-md top-0 z-50 w-full mb-20">
+<header className="md:fixed bg-white shadow-md top-0 z-50 w-full md:mb-20">
 <div className="containerUser">
   <div className="flex items-center  justify-between py-6 ">
   <Hamburger />

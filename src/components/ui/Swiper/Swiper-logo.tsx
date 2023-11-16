@@ -9,7 +9,7 @@ import "swiper/css";
 export default () => {
   return (
     <Swiper
-      className="  h-14 my-10"
+      className=" select-none h-10 my-10"
       spaceBetween={30}
       slidesPerView={2}
       breakpoints={{
