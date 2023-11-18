@@ -5,9 +5,9 @@ const MainCategories = () => {
   return (
     <>
       <h2 className="title-normal">Популярные категории</h2>
-      <div className="grid md:grid-cols-5 grid-cols-2">
+      <div className="grid md:grid-cols-5 grid-cols-2 mb-10">
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -16,7 +16,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -24,7 +24,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -33,7 +33,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -41,7 +41,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -50,7 +50,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -58,7 +58,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -67,7 +67,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -75,7 +75,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -84,7 +84,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -92,7 +92,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -101,7 +101,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -109,7 +109,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -118,7 +118,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -126,7 +126,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -135,7 +135,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -143,7 +143,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -152,7 +152,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >
@@ -160,7 +160,7 @@ const MainCategories = () => {
           </Link>
         </div>
 
-        <div className="m-2 border py-10 px-3 shadow-md flex flex-col items-center justify-center">
+        <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
             className=""
             src="/knob.png"
@@ -169,7 +169,7 @@ const MainCategories = () => {
             alt="Description of Image"
           />
           <Link
-            className="text-center block mt-3"
+            className="text-center block mt-2"
             href="/productCatalog"
             id="link"
           >

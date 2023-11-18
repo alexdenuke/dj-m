@@ -12,8 +12,13 @@ const Header: React.FC = () => {
   useEffect(() => {
     const onScroll = () => {
       // Устанавливаем состояние showNavBar в false, когда пользователь прокрутил страницу вниз
+      const screenWidth = window.innerWidth;
       const scrollY = window.scrollY;
+          // Проверяем, больше ли ширина экрана 768 пикселей
+    if (screenWidth > 768) {
+      // Меняем состояние showNavBar только для экранов больше 768 пикселей
       setShowNavBar(scrollY < 50); // 50 - это количество пикселей, вы можете настроить это значение
+    }
     };
 
     // Подписываемся на событие scroll

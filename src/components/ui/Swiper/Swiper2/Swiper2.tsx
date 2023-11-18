@@ -16,16 +16,16 @@ export default () => {
         // when window width is >= 640px
         640: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 40,
         },
         // when window width is >= 768px
         768: {
           slidesPerView: 4,
-          spaceBetween: 30,
+          spaceBetween: 40,
         },
         // when window width is >= 1024px
       }}
-      spaceBetween={0}
+      spaceBetween={40}
       slidesPerView={1}
     >
       <SwiperSlide>
