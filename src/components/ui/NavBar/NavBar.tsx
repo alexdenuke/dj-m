@@ -9,16 +9,16 @@ interface LinkProps {
 const NavBar: React.FC<LinkProps> = ({ margin = "" }) => {
   return (
     <nav className= {styles.nav}>
-      <Link className={`${margin}`} href="/" id="link">
+      <Link className={`${margin}`} href="/sets" id="link">
         Сэты
       </Link>
-      <Link className={`${margin}`} href="/" id="link">
+      <Link className={`${margin}`} href="/brends" id="link">
         Брэнды
       </Link>
-      <Link className={`${margin}`} href="/" id="link">
+      <Link className={`${margin}`} href="/service" id="link">
         Сервис
       </Link>
-      <Link className={`${margin}`} href="/" id="link">
+      <Link className={`${margin}`} href="/contacts" id="link">
         Контакты
       </Link>
     </nav>

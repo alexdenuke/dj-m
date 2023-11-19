@@ -4,7 +4,7 @@ import BottomNavigation from "../ui/BottomNavigation/BottomNavigation";
 
 const Footer: React.FC = () => {
   return (
-    <div className="mt-10">
+    <div className="">
       <BottomNavigation/>
       <div className="containerUser">
       <footer className="p-8 footer bg-base-200 text-base-content ">

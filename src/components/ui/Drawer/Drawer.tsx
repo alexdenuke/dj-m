@@ -76,18 +76,23 @@ const Drawer: React.FC<DrawerProps> = ({ margin = "" }) => {
               </Link>
             </li>
             <li>
-              <Link className="" href="/" id="link">
+              <Link className="" href="/brends" id="link">
                 Бренды
               </Link>
             </li>
             <li>
-              <Link className="" href="/" id="link">
+              <Link className="" href="/sets" id="link">
                 Сеты
               </Link>
             </li>
             <li>
-              <Link className="" href="/" id="link">
+              <Link className="" href="/service" id="link">
                 Сервис
+              </Link>
+            </li>
+            <li>
+              <Link className="" href="/contacts" id="link">
+                Контакты
               </Link>
             </li>
           </ul>
