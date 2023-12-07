@@ -8,10 +8,10 @@ const database = {
   development: {
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'zombi119',
-      database : 'dj-shop'
+      host : process.env.HOST_DB,
+      user : process.env.USER_DB,
+      password : process.env.PASSWORD_DB,
+      database : process.env.DATABASE_URL,
     }
   },
 

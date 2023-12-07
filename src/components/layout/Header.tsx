@@ -5,6 +5,8 @@ import SearchBar from "../ui/SearchBar/SearchBar";
 import Drawer from "../ui/Drawer/Drawer";
 import Link from "next/link";
 import NavBar from "../ui/NavBar/NavBar";
+import { GetServerSideProps } from 'next';
+import pool from "@/lib/db";
 
 const Header: React.FC = () => {
   const [showNavBar, setShowNavBar] = useState(true);
@@ -41,7 +43,7 @@ const Header: React.FC = () => {
             />
           </Link>
 
-          <Drawer margin="md:ml-10" />
+          <Drawer/>
 
           <SearchBar />
           <svg

@@ -12,7 +12,7 @@ const NavBar: React.FC<LinkProps> = ({ margin = "" }) => {
       <Link className={`${margin}`} href="/sets" id="link">
         Сэты
       </Link>
-      <Link className={`${margin}`} href="/brends" id="link">
+      <Link className={`${margin}`} href="/brands" id="link">
         Брэнды
       </Link>
       <Link className={`${margin}`} href="/service" id="link">

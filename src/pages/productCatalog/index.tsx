@@ -7,7 +7,7 @@ const ProductCatalog = () => {
     <div className="containerUser">
       <h1 className="title-normal">Каталог продуктов</h1>
       <div className="flex">
-        <div className="grid gap-x-5 grid-cols-2 sm:grid-cols-3 w-full md:w-2/3">
+        <div className="grid gap-x-5 grid-cols-2 sm:grid-cols-3 w-full md:w-23">
          
 
           <CardShort />

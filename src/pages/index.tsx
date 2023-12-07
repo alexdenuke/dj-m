@@ -14,9 +14,9 @@ export default function Home() {
     <>
       {/* <Swiper/> */}
       <div className="containerUser">
-        <SwiperLogo />
+        
       </div>
-      <div className="bg-[url('/main-back-ground.jpg')] bg-no-repeat bg-cover h-auto py-14 mb-10">
+      <div className="bg-[url('/main-back-ground.jpg')] bg-no-repeat bg-cover h-auto py-10 mt-5 ">
         <div className="containerUser h-full">
           <div className="flex flex-col items-center justify-center h-full">
             <div className="text-white title-h1 text-center ">
@@ -25,7 +25,7 @@ export default function Home() {
             <div className="text-white title-normal text-center">
               Лучшие и отборные запчасти
             </div>
-            <form className="flex justify-center mt-4 text-center pb-14 w-full">
+            <form className="flex justify-center mt-4 text-center  w-full">
               <input
                 type="text"
                 className="form-input rounded-l border-2 border-r-0 px-4 py-2 max-w-md min-w-0 grow"
@@ -42,12 +42,22 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <h2 className="title-normal containerUser mt-10">Поиск по брендам</h2>
+      <div className="py-10 border-2">
+      <div className="containerUser">
+      <SwiperLogo />
+      </div>
+      
+      </div>
+
+      
       {/* <div className="bg-gray-200 py-5 select-none">
         <div className="containerUser ">
 
         </div>
       </div> */}
       <div className="containerUser">
+        
         <MainCategories />
       </div>
 

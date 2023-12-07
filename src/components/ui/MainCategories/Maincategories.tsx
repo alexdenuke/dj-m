@@ -4,8 +4,8 @@ import Link from "next/link";
 const MainCategories = () => {
   return (
     <>
-      <h2 className="title-normal">Популярные категории</h2>
-      <div className="grid md:grid-cols-5 grid-cols-2 mb-10">
+      <h2 className="title-normal mt-10">Популярные категории</h2>
+      <div className="grid md:grid-cols-5 grid-cols-2 mb-10 ">
 
         <div className="m-2  py-10 px-3 shadow-md flex flex-col items-center justify-center">
           <Image
