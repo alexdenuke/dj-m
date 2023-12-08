@@ -6,7 +6,6 @@ import Drawer from "../ui/Drawer/Drawer";
 import Link from "next/link";
 import NavBar from "../ui/NavBar/NavBar";
 import { GetServerSideProps } from 'next';
-import pool from "@/lib/db";
 
 const Header: React.FC = () => {
   const [showNavBar, setShowNavBar] = useState(true);

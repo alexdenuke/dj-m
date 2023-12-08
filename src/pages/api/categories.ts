@@ -1,13 +1,9 @@
-console.log('Current NODE_ENV:', process.env.NODE_ENV);
 import knex from 'knex';
-
-import('dotenv/config');
 import knexConfig from '../../../knexfile'
 import type { NextApiRequest, NextApiResponse } from "next";
 
 const db = knex(knexConfig[process.env.NODE_ENV]);
 
-// const db = knex(knexConfig[environment]);
 
 export default async function handler(
   req: NextApiRequest,

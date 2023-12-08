@@ -1,46 +1,60 @@
 import { useRouter } from "next/router";
 import CardShort from "@/components/ui/CardShort/CardShort";
+import { GetServerSideProps, NextPage } from 'next';
 
+interface Product {
+  // Определите структуру объекта Product в соответствии с вашими данными
+}
 
-// export async function getServerSideProps(context) {
-//   const { category } = context.params;
-//   const res = await fetch(`http://localhost:3000/api/products/${encodeURIComponent(category)}`);
-//   const products = await res.json();
+interface CategoryPageProps {
+  products: Product[];
+  error?: string;
+}
 
-//   return {
-//       props: {
-//           products,
-//       },
-//   };
-// }
+export const getServerSideProps: GetServerSideProps<CategoryPageProps> = async (context) => {
+  const category = context.params?.category;
+  
+  if (!category || Array.isArray(category)) {
+    // Обработка случая, когда category не предоставлено или представляет собой массив
+    return { props: { products: [], error: 'Некорректная категория' }};
+  }
 
-const CategoryPage = () => {
+  try {
+    const response = await fetch(`http://localhost:3000/api/products/${encodeURIComponent(category)}`);
+    if (!response.ok) {
+      throw new Error('Проблема при запросе данных продукта');
+    }
+    const products: Product[] = await response.json();
+    return { props: { products } };
+  } catch (error) {
+    console.error('Ошибка при запросе к API:', error);
+    return { props: { products: [], error: 'Не удалось получить данные о продуктах' }};
+  }
+};
+
+const CategoryPage: NextPage<CategoryPageProps> = ({ products }) => {
+  console.log(products);
   const router = useRouter();
   const { category } = router.query;
-
-  // Здесь код для загрузки и отображения товаров выбранной категории
-  // Используйте category для запроса к вашему API или серверу
 
   return (
     <div className="containerUser">
       <h1>Каталог товаров для категории: {category}</h1>
       <div className="flex">
         <div className="grid gap-x-5 grid-cols-2 sm:grid-cols-3 w-full md:w-2/3">
-         
 
-          <CardShort />
+        {products.map(product => (
+            <CardShort 
+              key={product.id} 
+              name={product.name} 
+              price={product.price}
+              sku={product.sku}
+              imageUrl={product.imageUrl} // Предполагается, что у вас есть поле imageUrl
+            />
+          ))}
 
-          <CardShort />
-
-          <CardShort />
-
-          <CardShort />
-
-          <CardShort />
-
-          
         </div>
-        <aside className=" hidden md:block text-2xl text-center h-auto  bg-slate-200 flex-grow-0  w-1/3">
+        <aside className="hidden md:block text-2xl text-center h-auto bg-slate-200 flex-grow-0 w-1/3">
           Фильтры
         </aside>
       </div>
