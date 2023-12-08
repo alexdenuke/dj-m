@@ -10,15 +10,164 @@ const ProductCatalog = () => {
         <div className="grid gap-x-5 grid-cols-2 sm:grid-cols-3 w-full md:w-23">
          
 
-          <CardShort />
 
-          <CardShort />
+        <div className="flex  flex-col mb-5">
+      <div className="flex bg-gray-100 justify-center">
+        <Image
+          className=""
+          src="/item1.png"
+          alt= 'name'
+          width={200}
+          height={200}
+        />
+      </div>
 
-          <CardShort />
+      <Link className="text-center my-2 line-clamp-3 overflow-ellipsis overflow-hidden " href="/productCard" id="link">
+      </Link>
+      <div className="flex justify-between mb-3">
+      <p>Артикул:</p>
+        <p>Наличие</p>
+      </div>
+      <div className="flex justify-between">
+        <div className="font-bold">Цена: р</div>
+        <Link className="shrink-0" href="/" id="link">
+          <Image
+            className=""
+            src="/plus-cart.svg"
+            width={28}
+            height={25} // Округленное значение высоты
+            alt="Description of Image"
+          />
+        </Link>
+      </div>
+    </div>
 
-          <CardShort />
 
-          <CardShort />
+    <div className="flex  flex-col mb-5">
+      <div className="flex bg-gray-100 justify-center">
+        <Image
+          className=""
+          src="/item1.png"
+          alt= 'name'
+          width={200}
+          height={200}
+        />
+      </div>
+
+      <Link className="text-center my-2 line-clamp-3 overflow-ellipsis overflow-hidden " href="/productCard" id="link">
+      </Link>
+      <div className="flex justify-between mb-3">
+      <p>Артикул:</p>
+        <p>Наличие</p>
+      </div>
+      <div className="flex justify-between">
+        <div className="font-bold">Цена: р</div>
+        <Link className="shrink-0" href="/" id="link">
+          <Image
+            className=""
+            src="/plus-cart.svg"
+            width={28}
+            height={25} // Округленное значение высоты
+            alt="Description of Image"
+          />
+        </Link>
+      </div>
+    </div>
+
+
+    <div className="flex  flex-col mb-5">
+      <div className="flex bg-gray-100 justify-center">
+        <Image
+          className=""
+          src="/item1.png"
+          alt= 'name'
+          width={200}
+          height={200}
+        />
+      </div>
+
+      <Link className="text-center my-2 line-clamp-3 overflow-ellipsis overflow-hidden " href="/productCard" id="link">
+      </Link>
+      <div className="flex justify-between mb-3">
+      <p>Артикул:</p>
+        <p>Наличие</p>
+      </div>
+      <div className="flex justify-between">
+        <div className="font-bold">Цена: р</div>
+        <Link className="shrink-0" href="/" id="link">
+          <Image
+            className=""
+            src="/plus-cart.svg"
+            width={28}
+            height={25} // Округленное значение высоты
+            alt="Description of Image"
+          />
+        </Link>
+      </div>
+    </div>
+
+
+    <div className="flex  flex-col mb-5">
+      <div className="flex bg-gray-100 justify-center">
+        <Image
+          className=""
+          src="/item1.png"
+          alt= 'name'
+          width={200}
+          height={200}
+        />
+      </div>
+
+      <Link className="text-center my-2 line-clamp-3 overflow-ellipsis overflow-hidden " href="/productCard" id="link">
+      </Link>
+      <div className="flex justify-between mb-3">
+      <p>Артикул:</p>
+        <p>Наличие</p>
+      </div>
+      <div className="flex justify-between">
+        <div className="font-bold">Цена: р</div>
+        <Link className="shrink-0" href="/" id="link">
+          <Image
+            className=""
+            src="/plus-cart.svg"
+            width={28}
+            height={25} // Округленное значение высоты
+            alt="Description of Image"
+          />
+        </Link>
+      </div>
+    </div>
+
+    <div className="flex  flex-col mb-5">
+      <div className="flex bg-gray-100 justify-center">
+        <Image
+          className=""
+          src="/item1.png"
+          alt= 'name'
+          width={200}
+          height={200}
+        />
+      </div>
+
+      <Link className="text-center my-2 line-clamp-3 overflow-ellipsis overflow-hidden " href="/productCard" id="link">
+      </Link>
+      <div className="flex justify-between mb-3">
+      <p>Артикул:</p>
+        <p>Наличие</p>
+      </div>
+      <div className="flex justify-between">
+        <div className="font-bold">Цена: р</div>
+        <Link className="shrink-0" href="/" id="link">
+          <Image
+            className=""
+            src="/plus-cart.svg"
+            width={28}
+            height={25} // Округленное значение высоты
+            alt="Description of Image"
+          />
+        </Link>
+      </div>
+    </div>
 
           
         </div>

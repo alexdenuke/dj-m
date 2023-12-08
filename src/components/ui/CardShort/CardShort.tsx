@@ -2,7 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
 
-const CardShort = ({ name, price, sku, imageUrl }) => {
+interface CardShortProps {
+  name: string;
+  price: number; // или string, если цена передается как текст
+  sku: string;
+  imageUrl: string;
+}
+
+const CardShort: React.FC<CardShortProps> = ({ name, price, sku, imageUrl }) => {
   return (
     <div className="flex  flex-col mb-5">
       <div className="flex bg-gray-100 justify-center">

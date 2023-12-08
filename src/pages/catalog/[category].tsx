@@ -3,9 +3,13 @@ import CardShort from "@/components/ui/CardShort/CardShort";
 import { GetServerSideProps, NextPage } from 'next';
 
 interface Product {
-  // Определите структуру объекта Product в соответствии с вашими данными
-}
+  id: number,
+  name: string,
+  price: number,
+  sku: string,
+  imageUrl: string
 
+}
 interface CategoryPageProps {
   products: Product[];
   error?: string;
