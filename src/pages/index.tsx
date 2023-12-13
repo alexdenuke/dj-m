@@ -9,6 +9,8 @@ import SearchBar from "@/components/ui/SearchBar/SearchBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
+
 export default function Home() {
   return (
     <>
@@ -105,13 +107,13 @@ export default function Home() {
       </div>
 
       <div className="bg-gradient-to-r from-red-500 to-blue-500 ">
-        <div className="containerUser flex flex-col md:flex-row items-center justify-center  py-10 my-10">
-          <p className=" text-white text-xl font-semibold mb-3 md:m-0 md:mr-5">
+        <div className="containerUser flex flex-col md:flex-row items-center justify-center   py-10 my-10">
+          <p className=" text-white text-xl font-semibold mb-3 md:m-0 md:mr-5 ">
             Подпишитесь на рассылку!
           </p>
           <form className="mb-3 md:m-0 md:mr-5" action="">
             <input
-              className="py-3 px-4 "
+              className="py-3 px-4 rounded "
               type="text"
               placeholder="Введите email"
             />

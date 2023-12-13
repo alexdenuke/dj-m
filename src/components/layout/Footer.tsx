@@ -12,6 +12,7 @@ const Footer: React.FC = () => {
         <Image
           src="/logo.svg"
           alt="Description of Image"
+          className="w-[50px] h-auto"
           width={50}
           height={44}
         />

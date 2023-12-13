@@ -34,10 +34,10 @@ const Header: React.FC = () => {
         <div className="flex items-center  justify-between py-6 ">
           <Link className="shrink-0" href="/" id="link">
             <Image
-              className=""
+              className="w-[50px] h-auto"
               src="/logo.svg"
               width={50}
-              height={45} // Округленное значение высоты
+              height={45}
               alt="Description of Image"
             />
           </Link>

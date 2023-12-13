@@ -24,7 +24,7 @@ export const getServerSideProps: GetServerSideProps<CategoryPageProps> = async (
   }
 
   try {
-    const response = await fetch(`http://localhost:3000/api/products/${encodeURIComponent(category)}`);
+    const response = await fetch(`http://localhost:3000/api/categories/${encodeURIComponent(category)}`);
     if (!response.ok) {
       throw new Error('Проблема при запросе данных продукта');
     }
@@ -59,7 +59,7 @@ const CategoryPage: NextPage<CategoryPageProps> = ({ products }) => {
 
         </div>
         <aside className="hidden md:block text-2xl text-center h-auto bg-slate-200 flex-grow-0 w-1/3">
-          Фильтры
+          Фильтры: Категории, цена, Наличие на складе, Модель устройства, Бренд
         </aside>
       </div>
     </div>
