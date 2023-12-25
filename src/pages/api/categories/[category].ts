@@ -27,7 +27,6 @@ export default async function handler(
 
 async function fetchProductsFromCategory(category: string) {
   try {
-    console.log(`функция ${category}`)
     const products = await db('products')
     .join('categories', 'categories.id', '=', 'products.category_id')
     .select('products.*')

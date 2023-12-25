@@ -2,15 +2,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
-import { SwiperOptions } from "swiper/types";
 import CardShort from "../../CardShort/CardShort";
 
 // Import Swiper styles
 import "swiper/css";
 
-
-
-export default () => {
+const SwiperPopularProducts = () => {
   return (
     <Swiper
       className=" mb-14"
@@ -266,4 +263,7 @@ export default () => {
 
     </Swiper>
   );
-};
+}
+
+
+export default SwiperPopularProducts

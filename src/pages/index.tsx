@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
-import Swiper from "../components/ui/Swiper/Swiper";
-import Swiper2 from "../components/ui/Swiper/Swiper2/Swiper2";
+// import SwiperMain from "../components/ui/Swiper/SwiperMain";
+import SwiperPopularProducts from "../components/ui/Swiper/Swiper2/SwiperPopularProducts";
 import MainCategories from "../components/ui/MainCategories/Maincategories";
 import SwiperLogo from "@/components/ui/Swiper/Swiper-logo";
 import SearchBar from "@/components/ui/SearchBar/SearchBar";
@@ -65,7 +65,7 @@ export default function Home() {
 
       <div className="containerUser">
         <h2 className=" title-normal mt-10">Популярные товары</h2>
-        <Swiper2 />
+        <SwiperPopularProducts />
       </div>
 
       <div className="containerUser">

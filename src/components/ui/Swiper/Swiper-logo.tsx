@@ -5,8 +5,7 @@ import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
-
-export default () => {
+const SwiperLogo = () => {
   return (
     <Swiper
       className=" select-none h-8  "
@@ -84,4 +83,7 @@ export default () => {
       </SwiperSlide>
     </Swiper>
   );
-};
+}
+
+
+export default SwiperLogo;

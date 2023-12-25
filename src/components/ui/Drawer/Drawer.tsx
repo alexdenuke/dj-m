@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Drawer.module.scss";
 import Link from "next/link";
+import { Category } from "@/types/types";
 
-interface Category {
-  id: number;
-  name: string;
-}
+
 
 const Drawer: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +17,7 @@ const Drawer: React.FC = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await fetch("/api/categories"); // URL вашего API endpoint
+        const response = await fetch("/api/categories");
         if (!response.ok) {
           throw new Error("Сетевой запрос за данными категорий не удался");
         }
@@ -40,7 +38,7 @@ const Drawer: React.FC = () => {
     <div className="order-[-1] md:order-none">
       <button
         onClick={toggleMenu}
-        className="py-2 px-3 bg-gray-700 hover:bg-gray-900 max-w-max text-white font-bold rounded ml-5"
+        className="py-2 px-3 bg-gray-700 hover:bg-gray-900 max-w-max text-white font-bold rounded md:ml-5"
       >
         Каталог
       </button>

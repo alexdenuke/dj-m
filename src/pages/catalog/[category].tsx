@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import CardShort from "@/components/ui/CardShort/CardShort";
 import { GetServerSideProps, NextPage } from 'next';
+import Pagination from "@/components/ui/Pagination/Pagination";
 
 interface Product {
   id: number,
@@ -62,6 +63,9 @@ const CategoryPage: NextPage<CategoryPageProps> = ({ products }) => {
           Фильтры: Категории, цена, Наличие на складе, Модель устройства, Бренд
         </aside>
       </div>
+
+          <Pagination/>
+
     </div>
   );
 };
