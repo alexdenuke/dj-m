@@ -17,8 +17,8 @@ interface CategoryPageProps {
 }
 
 export const getServerSideProps: GetServerSideProps<CategoryPageProps> = async (context) => {
-  const category = context.params?.category;
-  
+  const category = context.params?.catalog;
+  console.log(context.params)
   if (!category || Array.isArray(category)) {
     // Обработка случая, когда category не предоставлено или представляет собой массив
     return { props: { products: [], error: 'Некорректная категория' }};
@@ -40,11 +40,11 @@ export const getServerSideProps: GetServerSideProps<CategoryPageProps> = async (
 const CategoryPage: NextPage<CategoryPageProps> = ({ products }) => {
   console.log(products);
   const router = useRouter();
-  const { category } = router.query;
+  const { catalog } = router.query;
 
   return (
     <div className="containerUser">
-      <h1>Каталог товаров для категории: {category}</h1>
+      <h1>Каталог товаров для категории: {catalog}</h1>
       <div className="flex">
         <div className="grid gap-x-5 grid-cols-2 sm:grid-cols-3 w-full md:w-2/3">
 

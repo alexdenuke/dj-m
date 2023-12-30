@@ -1,6 +1,6 @@
 import knex from "knex";
 import type { NextApiRequest, NextApiResponse } from "next";
-import knexConfig from "../../../../knexfile"
+import knexConfig from "../../../../knexfile";
 
 const db = knex(knexConfig[process.env.NODE_ENV || 'development']);
 

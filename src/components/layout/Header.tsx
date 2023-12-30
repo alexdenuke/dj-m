@@ -5,7 +5,7 @@ import SearchBar from "../ui/SearchBar/SearchBar";
 import Drawer from "../ui/Drawer/Drawer";
 import Link from "next/link";
 import NavBar from "../ui/NavBar/NavBar";
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps } from "next";
 
 const Header: React.FC = () => {
   const [showNavBar, setShowNavBar] = useState(true);
@@ -15,11 +15,11 @@ const Header: React.FC = () => {
       // Устанавливаем состояние showNavBar в false, когда пользователь прокрутил страницу вниз
       const screenWidth = window.innerWidth;
       const scrollY = window.scrollY;
-          // Проверяем, больше ли ширина экрана 768 пикселей
-    if (screenWidth > 768) {
-      // Меняем состояние showNavBar только для экранов больше 768 пикселей
-      setShowNavBar(scrollY < 50); // 50 - это количество пикселей, вы можете настроить это значение
-    }
+      // Проверяем, больше ли ширина экрана 768 пикселей
+      if (screenWidth > 768) {
+        // Меняем состояние showNavBar только для экранов больше 768 пикселей
+        setShowNavBar(scrollY < 50); // 50 - это количество пикселей, вы можете настроить это значение
+      }
     };
 
     // Подписываемся на событие scroll
@@ -29,7 +29,10 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
-    <header id="header" className="md:fixed bg-white shadow-md top-0 z-50 w-full md:mb-20">
+    <header
+      id="header"
+      className="md:fixed bg-white shadow-md top-0 z-50 w-full md:mb-20"
+    >
       <div className="containerUser">
         <div className="flex items-center  justify-between py-6 ">
           <Link className="shrink-0" href="/" id="link">
@@ -42,7 +45,7 @@ const Header: React.FC = () => {
             />
           </Link>
 
-          <Drawer/>
+          <Drawer />
 
           <SearchBar />
           <svg

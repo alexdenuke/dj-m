@@ -2,38 +2,31 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./NavBar.module.scss";
 import { Brand } from "@/types/types";
-import {
-  useQuery,
-} from '@tanstack/react-query'
+import { useQuery } from "@tanstack/react-query";
 
 type LinkProps = {
-  margin: string,
-}
-
-
+  margin: string;
+};
 
 const NavBar: React.FC<LinkProps> = ({ margin = "" }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Добавляем состояние для отслеживания открыто/закрыто меню
 
-const toggleMenu = () => {
-  setIsMenuOpen(!isMenuOpen);
-}
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
+  const fetchBrands = async () => {
+    const response = await fetch("/api/brands");
+    if (!response.ok) {
+      throw new Error(`An error occurred: ${response.statusText}`);
+    }
+    return response.json();
+  };
 
-
-const fetchBrands = async () => {
-  const response = await fetch('/api/brands');
-  if (!response.ok) {
-    throw new Error(`An error occurred: ${response.statusText}`);
-  }
-  return response.json();
-};
-
-
-const { data, isLoading, isError, error } = useQuery<Brand[]>({
-  queryKey: ['brands'],
-  queryFn: fetchBrands
-});
+  const { data, isLoading, isError, error } = useQuery<Brand[]>({
+    queryKey: ["brands"],
+    queryFn: fetchBrands,
+  });
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -42,7 +35,6 @@ const { data, isLoading, isError, error } = useQuery<Brand[]>({
   if (isError) {
     return <div>Error: {error.message}</div>;
   }
-
 
   return (
     <nav className={styles.nav}>
@@ -56,13 +48,16 @@ const { data, isLoading, isError, error } = useQuery<Brand[]>({
       >
         Бренды
       </button>
-      {isMenuOpen && data && ( // Отображаем меню, если isMenuOpen === true
-        <div className="fixed top-0 right-0 w-96 h-full min-h-full bg-slate-500">
-              {data.map(brand => (
-      <div key={brand.id}>{brand.name}</div>
-    ))}
-        </div>
-      )}
+      {isMenuOpen &&
+        data && ( // Отображаем меню, если isMenuOpen === true
+          <div className="fixed top-0 right-0 w-96 h-full min-h-full bg-slate-500">
+            {data.map((brand) => (
+              <Link key={brand.id} className="block" href={`/catalog/${encodeURIComponent(brand.name)}`} id="link">
+                {brand.name}
+              </Link>
+            ))}
+          </div>
+        )}
       <Link className={`${margin}`} href="/service" id="link">
         Сервис
       </Link>
